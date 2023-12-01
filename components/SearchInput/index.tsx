@@ -23,7 +23,8 @@ const SearchInput = () => {
 	const getUserPost = (value: string) => {
 		var options = null;
 
-		if (value.includes('tiktok.com') && value.includes('/video/')) {
+
+		if ((value.includes('tiktok.com') && value.includes('/video/')) || value.match(/(vt\.tiktok\.com\/[A-Za-z0-9]+)+/g)) {
 			// get video by url
 			options = {
 				method: 'GET',

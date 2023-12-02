@@ -10,6 +10,7 @@ import {
 	useSelector,
 } from '../../redux';
 import { Feed } from '../index';
+import { toast } from 'react-toastify';
 
 const SearchInput = () => {
 	const [error, setError] = useState<null | string>(null);
@@ -82,13 +83,15 @@ const SearchInput = () => {
 							dispatch(setVideoLoading(false));
 						}
 					} else {
-						setError('username or video url is wrong.');
+						// setError('username or video url is wrong.');
+						toast.error("username or video url is wrong.")
 						dispatch(setVideoLoading(false));
 					}
 					console.log(response.data);
 				})
 				.catch(function (error) {
 					console.error(error);
+					toast.error("There is an error")
 					dispatch(setVideoLoading(false));
 				});
 		}

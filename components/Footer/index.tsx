@@ -29,7 +29,7 @@ const Footer = () => {
                     <Adsense
                         client="ca-pub-7331531005923711"
                         slot="8387500170"
-                        style={{ display: "inline-block", width: 500, height: 300 }}
+                        style={{ display: "inline-block", width: 500, height: 300, maxWidth: "100vw" }}
                         format=""
                     />
                 </div>

@@ -42,3 +42,14 @@ a {
 	right: 0;
 	margin: auto;
 }
+
+.adsbygoogle {
+	max-width: 500px;
+}
+
+@media only screen and (max-width: 500px) {
+	.adsbygoogle, .adsbygoogle * {
+		width: 100% !important;
+		max-width: 350px !important;
+	}
+}

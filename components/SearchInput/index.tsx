@@ -81,6 +81,7 @@ const SearchInput = () => {
 							);
 							setvideos(videos);
 							dispatch(setVideoLoading(false));
+							toast.success("Your videos are ready to download")
 						}
 					} else {
 						// setError('username or video url is wrong.');
@@ -157,7 +158,7 @@ const SearchInput = () => {
 					<Adsense
 						client="ca-pub-7331531005923711"
 						slot="8387500170"
-						style={{ display: 'block', maxWidth: 500 }}
+						style={{ display: 'block' }}
 						layout="in-article"
 						format="fluid"
 					/>

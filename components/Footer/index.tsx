@@ -18,10 +18,10 @@ const Footer = () => {
         <footer ref={footerRef}>
             <div className="container">
                 <div className="flex justify-center items-center gap-4 border-t py-2">
-                    <Link href={'/disclaimer'}>
+                    <Link href={'/disclaimer'} legacyBehavior>
                         <a>Disclaimer</a>
                     </Link>
-                    <Link href={'/privacy'}>
+                    <Link href={'/privacy'} legacyBehavior>
                         <a>Privacy Policy</a>
                     </Link>
                 </div>
@@ -29,9 +29,9 @@ const Footer = () => {
                     <Adsense
                         client="ca-pub-7331531005923711"
                         slot="8387500170"
-                        style={{ display: 'block', maxWidth: 500 }}
-                        layout="in-article"
-                        format="fluid"
+						style={{ display: 'block' }}
+						layout="in-article"
+						format="fluid"
                     />
                 </div>
             </div>

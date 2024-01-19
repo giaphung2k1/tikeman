@@ -159,8 +159,7 @@ const SearchInput = () => {
 						client="ca-pub-7331531005923711"
 						slot="8387500170"
 						style={{ display: 'block' }}
-						layout="in-article"
-						format="fluid"
+						format=""
 					/>
 					</div>
 				</div>
